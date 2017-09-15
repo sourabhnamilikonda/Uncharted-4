@@ -1,0 +1,6 @@
+---
+- name: This is a hello-world example
+  hosts: ec2-13-56-222-195.us-west-1.compute.amazonaws.com
+  tasks:
+  - name: Create a file called 'helloworld.html' with the content 'hello world'.
+    copy: src=/root/ansible_playbooks/helloworld.html dest=/var/www/html/helloworld.html

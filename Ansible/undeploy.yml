@@ -1,0 +1,7 @@
+---
+- name: Un deploy  hello-world.html file
+  hosts: ec2-54-215-158-40.us-west-1.compute.amazonaws.com
+  tasks:
+  - name: Create a file called '/tmp/helloworld.html' with the content 'hello world'.
+    file: path=/var/www/html/helloworld.html state=absent
+

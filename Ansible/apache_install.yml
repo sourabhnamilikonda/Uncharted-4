@@ -1,0 +1,7 @@
+
+---
+- hosts: ec2-13-56-222-195.us-west-1.compute.amazonaws.com
+  sudo: yes
+  tasks:
+    - name: install apache2
+      apt: name=apache2 update_cache=yes state=latest
